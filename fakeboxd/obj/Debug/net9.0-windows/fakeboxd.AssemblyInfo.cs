@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fakeboxd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c0519213787ba2f5f3dd752ac75432bc8c1c982")]
 [assembly: System.Reflection.AssemblyProductAttribute("fakeboxd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fakeboxd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
