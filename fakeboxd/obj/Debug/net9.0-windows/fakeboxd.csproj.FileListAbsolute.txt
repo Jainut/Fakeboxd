@@ -1,0 +1,17 @@
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\bin\Debug\net9.0-windows\fakeboxd.exe
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\bin\Debug\net9.0-windows\fakeboxd.deps.json
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\bin\Debug\net9.0-windows\fakeboxd.runtimeconfig.json
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\bin\Debug\net9.0-windows\fakeboxd.dll
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\bin\Debug\net9.0-windows\fakeboxd.pdb
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.Form1.resources
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.Properties.Resources.resources
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.csproj.GenerateResource.cache
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.AssemblyInfoInputs.cache
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.AssemblyInfo.cs
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.csproj.CoreCompileInputs.cache
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.dll
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\refint\fakeboxd.dll
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.pdb
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\fakeboxd.genruntimeconfig.cache
+C:\Users\aluno_analytics.CENTRO40\source\repos\fakeboxd\fakeboxd\obj\Debug\net9.0-windows\ref\fakeboxd.dll
