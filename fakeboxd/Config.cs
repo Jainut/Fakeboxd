@@ -5,6 +5,7 @@ public class Config
 {
 	public static string URL { get; }
 	public static string BearerToken { get; }
+	public static string APIKey { get; }
 
 	static Config()
 	{
@@ -15,5 +16,6 @@ public class Config
 
 		URL = config["ApiSettings:BaseURL"];
 		BearerToken = config["ApiSettings:BearerToken"];
+		APIKey = config["ApiSettings:APIKey"];
 	}
 }
