@@ -1,6 +1,6 @@
-.vs/
 .obj/
 .bin/
 appsettingsDevelopment.json
 *.sue
 *.user
+.vs/
