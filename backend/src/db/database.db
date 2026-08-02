@@ -1,7 +1,7 @@
 create extension if not exists pgcrypto;
 
 create table users (
-    id UUID varchar(36) primary key default gen_random_uuid::text,
+    id UUID primary key default gen_random_uuid(),
     name varchar(25) not null,
     email varchar(50) unique not null,
     password_hash varchar(255) not null,
@@ -11,11 +11,11 @@ create table users (
 );
 
 create table movies (
-    id UUID varchar(36) primary key default gen_random_uuid::text,
+    id UUID primary key default gen_random_uuid(),
     title varchar(70) unique not null,
     description text,
     duration_minutes integer not null,
-    reselase_year integer,
+    release_year integer,
     cover_url text,
     created_at timestamptz not null default now(),
 
@@ -25,15 +25,15 @@ create table movies (
     constraint movies_release_year_valid
         check(
             release_year is null
-            or release_yer between 1888 and 2200
+            or release_year between 1888 and 2200
         )
 );
 
 create table reviews (
-    id UUID varchar(36) primary key default gen_random_uuid::text,
-    user_id varchar(36) not null,
-    movie_id varchar(36) not null
-    review_text text,
+    id UUID primary key default gen_random_uuid(),
+    user_id UUID not null,
+    movie_id UUID not null,
+    review_text TEXT,
     rating numeric(2,1) not null,
     created_at timestamptz not null default now(),
     updated_ai timestamptz,
@@ -45,9 +45,9 @@ create table reviews (
 );
 
 create table comments (
-    id UUID varchar(36) primary key default gen_random_uuid::text,
-    user_id varchar(36) not null,
-    review_id varchar(36) not null,
+    id UUID primary key default gen_random_uuid(),
+    user_id UUID not null,
+    review_id UUID not null,
     coment_text text not null,
     created_at timestamptz not null default now(),
     foreign key (user_id) references users(id),
