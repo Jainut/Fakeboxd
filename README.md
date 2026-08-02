@@ -1,10 +1,9 @@
-# Letterboxd inspired Windows forms App
+# Letterboxd inspired Web Application
 
-I'm making this windows forms app inspired by letterboxd.
+I'm making this web application inspired by letterboxd.
 
 ## Technologies
 
-- C#
-- Windows Forms
-- HTPP Protocol
-- HTTP Client connect
+- Typescript
+- Express
+- Drizzle
