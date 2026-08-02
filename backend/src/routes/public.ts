@@ -1,6 +1,5 @@
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
-import { drizzle } from 'drizzle-orm/node-postgres';
 import { eq } from 'drizzle-orm';
 import { movies } from '../../drizzle/schema';
 import express from "express";
@@ -16,7 +15,7 @@ router.get("/ping", (req, res) => {
 router.post('/register/movie', async (req, res) => {
     const data = req.body;
 
-    const movie: typeof movies = {
+    const movie: typeof movies.$inferInsert = {
         title: data.title,
         description: data.description,
         durationMinutes: data.durationMinutes,
