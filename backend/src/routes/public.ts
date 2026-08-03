@@ -52,6 +52,36 @@ router.post('/register/user', async (req, res) => { // Sign up route for users
     }
 });
 
+router.post('/login', async (req, res) => { // Login route for users
+    try{
+        const {email, password} = req.body;
+
+        if(typeof email !== 'string' || typeof password !== 'string' || !email.trim() || !password) { // Error handling for invalid data types
+            return res.status(400).json({ message: "Missing email or password" });
+        }
+
+        const normalizedEmail = email.toLowerCase(); // Normalizing email to lowercase for consistency
+
+        const [user] = await db.select().from(users).where(eq(users.email, normalizedEmail)).limit(1); // Fetching user from the database
+
+        if(!user) { // Error handling for unregistered emails
+            return res.status(400).json({ message: "Email or password is incorrect" });
+        }
+
+        const passwordMatch = await bcrypt.compare(password, user.passwordHash); // Password comparison
+
+        if(!passwordMatch) { // Error handling for incorrect passwords
+            return res.status(400).json({ message: "Email or password is incorrect" });
+        }
+
+        return res.status(200).json({ message: "User logged in successfully" });
+
+    }catch (error) {
+        console.error('Error logging in user:', error);
+        return res.status(500).json({ message: "Internal server error! Try again later" });
+    }
+});
+
 function validEmail(email: string) { // Email validation function
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
