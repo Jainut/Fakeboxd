@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import { createServer } from "http";
 import publicRouter from "./routes/public";
+import privateRouter from "./routes/private";
 
 const app = express();
 
@@ -16,6 +17,7 @@ const server = createServer(app);
 
 app.use(express.json());
 app.use('/', publicRouter);
+app.use('/', privateRouter);
 
 const selfPing = () => {
     setInterval(() => {

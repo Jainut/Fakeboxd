@@ -12,20 +12,4 @@ router.get("/ping", (req, res) => {
     res.status(200).json({ message: "Pong!" });
 });
 
-router.post('/register/movie', async (req, res) => {
-    const data = req.body;
-
-    const movie: typeof movies.$inferInsert = {
-        title: data.title,
-        description: data.description,
-        durationMinutes: data.durationMinutes,
-        releaseYear: data.releaseYear,
-        coverUrl: data.coverUrl,
-    };
-
-    await db.insert(movies).values(movie);
-
-    res.status(201).json({ message: "Movie registered successfully!" });
-});
-
 export default router;
