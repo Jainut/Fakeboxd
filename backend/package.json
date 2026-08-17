@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.ts",
-    "ping": "tsx watch ping.ts"
+    "ping": "tsx watch ping.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

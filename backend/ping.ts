@@ -35,7 +35,7 @@ const selfPing = () => {
         } catch (error) {
             console.error('Error pra pingar, twin ✌️😭', error);
         }
-    }, 60000); // Envia um ping a cada 60 segundos
+    }, 60_000); // Envia um ping a cada 60 segundos
 }
 
 const dbPing = () => {
@@ -46,7 +46,7 @@ const dbPing = () => {
         } catch (error) {
             console.error('DB Ping error:', error);
         }
-    }, 20000); // Envia um ping a cada 72 horas
+    }, 259_200_000); // Envia um ping a cada 72 horas
 }
 
 app.get('/ping', (req, res) => {
