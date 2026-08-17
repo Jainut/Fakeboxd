@@ -4,12 +4,12 @@ import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { eq } from 'drizzle-orm';
 import { sql } from 'drizzle-orm';
-import { users } from './drizzle/schema';
+import { users } from './src/drizzle/schema';
 import express from "express";
 import bcrypt from "bcrypt";
 import cors from "cors";
 import { createServer } from "http";
-import { movies } from './drizzle/schema';
+import { movies } from './src/drizzle/schema';
 
 // Imports ====
 

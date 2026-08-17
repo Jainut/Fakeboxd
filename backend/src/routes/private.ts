@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { eq } from 'drizzle-orm';
-import { movies } from '../../drizzle/schema';
+import { movies } from '../drizzle/schema';
 import express from "express";
 import bcrypt from "bcrypt";
 
