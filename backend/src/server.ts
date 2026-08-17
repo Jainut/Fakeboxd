@@ -31,4 +31,3 @@ server.listen(PORT, () => {
     console.log(`Rodando Fakeboxd na porta ${PORT}`);
     selfPing();
 });
-

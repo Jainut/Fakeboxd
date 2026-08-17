@@ -54,11 +54,11 @@ create table comments (
     foreign key (review_id) references reviews(id)
 );
 
-create table followersboxd (
+create table followers (
 
 );
 
-create table likesboxd(
+create table likes(
 
 );
 
@@ -70,7 +70,19 @@ create table actors(
 
 );
 
-create table genders(
+create table movie_cast(
+
+);
+
+create table lists(
+
+);
+
+create table list_movies(
+
+);
+
+create table movie_genres(
 
 );
 
